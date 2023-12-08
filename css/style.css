@@ -4,6 +4,7 @@
   box-sizing: border-box;
   outline: none;
   text-decoration: none;
+  transition: all 0.4s ease;
 }
 
 body {
@@ -47,6 +48,9 @@ section {
   padding: 10px;
   font-size: 16px;
   color: #000;
+}
+.navbar .nav-right a:active {
+  color: rgb(40, 53, 147);
 }
 .navbar .nav-right .login-btn {
   background: #0d6efd;
@@ -181,6 +185,82 @@ section {
   font-size: 14px;
 }
 .home-section .footer-section .footer-items a {
+  color: #363535;
+  text-decoration: underline;
+  font-weight: 100;
+}
+
+.course-section {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.course-section .course-container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+}
+.course-section .course-container .course-card {
+  height: 310px;
+  width: 300px;
+  margin: 30px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  border-radius: 8px;
+}
+.course-section .course-container .course-card img {
+  width: 260px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid gray;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+.course-section .course-container .course-card img:hover {
+  transform: scale(1.05);
+}
+.course-section .course-container .course-card .course-details {
+  display: flex;
+  flex-direction: column;
+  padding-top: 14px;
+  line-height: 25px;
+}
+.course-section .course-container .course-card .course-details .course-title {
+  font-size: 20px;
+}
+.course-section .course-container .course-card .course-details .mentor-name {
+  font-size: 16px;
+  color: gray;
+}
+.course-section .course-container .course-card .course-details .course-price {
+  font-size: 20px;
+  color: #198754;
+  font-weight: bold;
+}
+.course-section .course-container .course-card .course-details .course-price .actual-price {
+  color: rgb(40, 53, 147);
+  font-weight: 100;
+  margin-right: 10px;
+  text-decoration: line-through;
+}
+.course-section .course-container .course-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 4px 8px gray;
+}
+.course-section .footer-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.course-section .footer-section .footer-items {
+  letter-spacing: 3px;
+  font-weight: bold;
+  font-size: 14px;
+}
+.course-section .footer-section .footer-items a {
   color: #363535;
   text-decoration: underline;
   font-weight: 100;
