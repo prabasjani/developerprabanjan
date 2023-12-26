@@ -1,0 +1,62 @@
+// Courses section
+.course-card-section{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    .course-card-container{
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        .course-card{
+            height: 310px;
+            width: 300px;
+            margin: 120px 0px 0px 30px;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            position: relative;
+            border-radius: 8px;
+            img{
+                width: 260px;
+                padding-bottom: 20px;
+                border-bottom: 1px solid gray;
+                border-top-left-radius: 8px;
+                border-top-right-radius: 8px;
+                &:hover{
+                    transform: scale(1.05);
+                }
+            }
+            .course-details{
+                display: flex;
+                flex-direction: column;
+                padding-top: 14px;
+                line-height: 25px;
+                .course-title{
+                    font-size: $font-md;
+                }
+                .mentor-name{
+                    font-size: $font-sm;
+                    color: gray;
+                }
+                .course-price{
+                    font-size: $font-md;
+                    color: $success-color;
+                    font-weight: bold;
+                    .actual-price{
+                        color: $info-color;
+                        font-weight: 100;
+                        margin-right: 10px;
+                        text-decoration: line-through;
+                    }
+                }
+            }
+            &:hover{
+                box-shadow: 0px 4px 8px gray;
+            }
+        }
+    }
+
+    @import "footer";
+}

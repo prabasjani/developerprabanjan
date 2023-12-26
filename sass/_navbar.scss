@@ -1,0 +1,42 @@
+// Navbar
+.navbar{
+    height: 75px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 0px 75px;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 100;
+    .nav-left{
+        display: flex;
+        a{
+            font-size: $font-xl;
+            font-weight: bold;
+            color: #000;
+        }
+    }
+    .nav-right{
+        display: flex;
+        align-items: center;
+        a{
+            margin-left: 10px;
+            padding: 10px;
+            font-size: $font-sm - 2px;
+            color: #000;
+            &:active{
+                color: $info-color;
+            }
+        }
+        .login-btn{
+            background: $primary-color;
+            color: #fff;
+            padding: 10px 50px;
+            border-radius: 50px;
+            margin-left: 45px;
+        }
+    }
+}

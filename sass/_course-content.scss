@@ -1,0 +1,70 @@
+@import "variables";
+
+.course-learn{
+    margin: 50px 0px;
+    width: 100%;
+    position: relative;
+    font-family: 'Times New Roman', Times, serif;
+    .learn{
+        font-size: $font-xxl + 10px;
+        color: $info-color;
+        font-family: 'Times New Roman', Times, serif;
+        margin: 40px 0px;
+    }
+    .content-container{
+        width: 60%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        position: relative;
+        left: 25%;
+        padding: 50px 0px 0px 0px;
+        transition: .5s;
+        .learning-title{
+            font-size: $font-xl - 3px;
+            font-weight: bold;
+            padding: 20px 0px;
+            cursor: pointer;
+
+            position: relative;
+            &::after{
+                content: '+';
+                position: absolute;
+                right: 10px;
+            }
+            span{
+                color: $info-color;
+            }
+        }
+        &.active .learning-sub-title{
+            height: fit-content;
+        }
+
+        &.active .learning-title::after{
+            content: '-';
+            transition: .5s;
+        }
+        .learning-sub-title{
+            font-size: $font-lg ;
+            line-height: 75px;
+            list-style: none;
+            margin-left: 50px;
+            width: 100%;
+            
+            height: 0px;
+            overflow: hidden;
+            transition: all .5s ease;
+            
+            .bx{
+                padding: 0px 10px;
+            }
+            li{
+                text-transform: capitalize;
+                cursor: pointer;
+                &:hover{
+                    color: $info-color;
+                }
+            }
+        }
+    }
+}

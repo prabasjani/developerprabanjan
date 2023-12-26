@@ -1,0 +1,22 @@
+//footer section
+.footer-section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .footer-items{
+        letter-spacing: 3px;
+        font-weight: bold;
+        font-size: $font-sm - 2px;
+        .home-page{
+            letter-spacing: 3px;
+            font-weight: bold;
+            font-size: $font-sm - 2px;
+            text-decoration: none;
+        }
+        a{
+            color: #363535;
+            text-decoration: underline;
+            font-weight: 100;
+        }
+    }
+}
